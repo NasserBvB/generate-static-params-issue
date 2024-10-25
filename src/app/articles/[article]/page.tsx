@@ -23,7 +23,7 @@ export async function generateStaticParams() {
   const posts = await mockArticles();
 
   return posts.map((post) => ({
-    slug: post.title,
+    article: post.title,
   }));
 }
 
